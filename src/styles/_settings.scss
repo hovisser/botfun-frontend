@@ -1,0 +1,111 @@
+//
+// Project variables
+// --------------------------------------------------
+
+// Fonts ( old font crap )
+$fallback--fonts: Arial, Verdana, sans-serif;
+$default-font--regular: 'Open Sans', $fallback--fonts;
+
+// Sidebar light
+$sidebar__bg-1: #63bee8;
+$sidebar__bg-2: #236c8d;
+
+$sidebar__mobilebtn-color: #fff;
+
+$sidebar__services-color: #fff;
+$sidebar__services-iconcolor: #1c556f;
+$sidebar__services-iconcolor-active: #fff;
+$sidebar__services-bordercolor-1: #59afd6;
+$sidebar__services-bordercolor-2: #75c2e4;
+
+$sidebar__menu-color: #fff;
+$sidebar__menu-iconcolor: #fff;
+$sidebar__menu-iconhovercolor: #1c556f;
+$sidebar__menu-bg: rgba(255,255,255,0.15);
+
+$sidebar__notifier-color: #1c556f;
+
+$sidebar__submenu-color: #1c556f;
+$sidebar__submenu-hovercolor: #f6f9fb;
+
+// Colors
+$pallete-0: #000; // black
+$pallete-1: #fff; // white
+$pallete-2: #1c556f; // dark blue text color
+$pallete-3: #f6f9fb; // body bg
+$pallete-4: #63bee8; // gradient light blue
+$pallete-5: #236c8d; // gradient light blue
+$pallete-6: #5ab3db;
+$pallete-7: #267091; // overlay bg color
+$pallete-8: #163848;
+$pallete-9: #385461; // Dark blue background color
+$pallete-10: #e9eff4; // light grey
+$pallete-11: #b7bdc1; // darker grey
+$pallete-12: #edf3f7; // xtra light grey
+$pallete-13: #618fa3;
+$pallete-14: #f0f3f5;
+$pallete-20: red; // red
+$pallete-21: #60c119; // green
+$pallete-22: #017bec; // blauw
+$pallete-23: rgba(22,56,72, 0.5);
+
+$themes: (
+  light: (
+    header__bg: #fff,
+    header__color: #1c556f,
+    header__earnings-color-1: #fff,
+    header__earnings-color-2: #1c556f,
+    header__earnings-bg-1: #63bee8,
+    header__earnings-bg-2: #5ab3db,
+    header__performer-color: #1c556f,
+    header__performer-dropdown-color: #1c556f,
+    header__performer-dropdown-bg: #fff,
+    header__performer-bordercolor: #e0eaf1,
+    body__color: #f6f9fb,
+    body__colordark: #e9ecee,
+    body__content-bg: #fff,
+    body__content-header-color: #236c8d,
+    body__content-header-shadowcolor: #f6f9fb,
+    body__content-text-color: #267091,
+    body__content-label-color: #618fa3,
+    body__content-form-color: #1c556f,
+    body__content-form-bg: #f6f9fb,
+    table__bg: #fff,
+    table__color: #236c8d,
+    table__row-bg: #f6f9fb,
+    pager__bg: #fff,
+    pager__itembg: #5ab3db,
+    pager__color: #267091,
+    inbox__bg: rgba(237, 243, 247, 0.95),
+    inbox__form: #e9ecee,
+  ),
+  dark: (
+    header__bg: #2e4662,
+    header__color: #feffff,
+    header__earnings-color-1: #fff,
+    header__earnings-color-2: #1c556f,
+    header__earnings-bg-1: #63bee8,
+    header__earnings-bg-2: #5ab3db,
+    header__performer-color: #feffff,
+    header__performer-dropdown-color: #fff,
+    header__performer-dropdown-bg: #2e4662,
+    header__performer-bordercolor: #283e56,
+    body__color: #283e56,
+    body__colordark: #283e56,
+    body__content-bg: #223447,
+    body__content-header-color: #5ab3db,
+    body__content-header-shadowcolor: #1c2c3e,
+    body__content-text-color: #fff,
+    body__content-label-color: #fff,
+    body__content-form-color: #d5dadd,
+    body__content-form-bg: #1d2b3b,
+    table__bg: #223447,
+    table__color: #fff,
+    table__row-bg: #1c2c3e,
+    pager__bg: #223447,
+    pager__itembg: #5ab3db,
+    pager__color: #fff,
+    inbox__bg: rgba(0, 0, 0, 0.25),
+    inbox__form: #1c2c3e,
+  ),
+);

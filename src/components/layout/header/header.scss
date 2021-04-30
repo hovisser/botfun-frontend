@@ -1,0 +1,55 @@
+//
+// Header
+// --------------------------------------------------
+
+// Imports
+
+@import "../../../styles/_mixins.scss";
+@import "../../../styles/_settings.scss";
+.header {
+    width: 100%;
+    background-color: rgb(109, 132, 196);
+    height: 100px;
+
+    &__title {
+        h1 {
+            @include rem(font-size, 22px);
+            font-weight: 700;
+            @include rem(padding, 12px 9px 0px 0px);
+            @include breakpoint(xs) {
+                @include rem(font-size, 16px);
+                @include rem(padding, 23px 9px 0px 0px);
+                line-height: 100%;
+            }
+
+            @include themify($themes) {
+                color: themed('header__color');  
+            }
+        }
+    }
+
+    &__logo {
+        color: white;
+        font-size: 14px;
+        float:left;
+    }
+
+    &__menu {
+        width: auto;
+        ul {
+            list-style: none;
+
+            li {
+                display: inline;
+            }
+        }
+        float:left;
+    }
+
+    &__account {
+        color: white;
+        font-size: 12px;
+        float:right
+    };
+
+}
