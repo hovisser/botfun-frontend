@@ -1,0 +1,10 @@
+@import "../styles/_settings.scss";
+@import "../styles/_mixins.scss";
+
+.page {
+    .wrapper {
+        width: 80%;
+        display: block;
+        margin:0px auto;
+    }
+}

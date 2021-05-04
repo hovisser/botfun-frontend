@@ -1,55 +1,64 @@
-//
-// Header
-// --------------------------------------------------
-
-// Imports
-
-@import "../../../styles/_mixins.scss";
 @import "../../../styles/_settings.scss";
+@import "../../../styles/_mixins.scss";
+
 .header {
     width: 100%;
-    background-color: rgb(109, 132, 196);
-    height: 100px;
+    height: 50px;
+    background-color: $pallete-5;
+    display: block;
+    color: $pallete-7;
 
-    &__title {
-        h1 {
-            @include rem(font-size, 22px);
-            font-weight: 700;
-            @include rem(padding, 12px 9px 0px 0px);
-            @include breakpoint(xs) {
-                @include rem(font-size, 16px);
-                @include rem(padding, 23px 9px 0px 0px);
-                line-height: 100%;
-            }
+    .navbar {
+        color: $pallete-7;
+        &-menu {
+           
+            ul {                
+                margin-right: 25px;
+                float: right;
+                margin-top: 10px;
+                padding: 0;               
+                
+                li {
+                    text-transform: uppercase;
+                    display: inline-block;
+                    list-style: none;
+                    line-height: 27px;                    
 
-            @include themify($themes) {
-                color: themed('header__color');  
+                    a {              
+                        text-decoration: none;
+                        text-shadow:  0px 0px 1px argb(157, 168, 184, 1);
+                        font-size: 14px;
+                        color: #9da8b8;
+                        font-weight: 400;
+                        display: inline-block;
+                        margin-right: 20px;
+                        text-align: center;
+                        -webkit-transition: color 0.5s ease;
+                        -moz-transition: color 0.5s ease;
+                        -o-transition: color 0.5s ease;
+                        transition: color 0.5s ease;
+                    }
+
+                    a:hover, a:focus {
+                        color:#bfcada;
+                        text-decoration:none;
+                        outline:0;
+                        -webkit-transition:color 0.5s ease;
+                        -moz-transition:color 0.5s ease;
+                        -o-transition:color 0.5s ease;
+                        transition:color 0.5s ease
+                    }
+
+                    a.selected {
+                        color:#fff;
+                        text-decoration:none;
+                        -webkit-transition:color 0.5s ease;
+                        -moz-transition:color 0.5s ease;
+                        -o-transition:color 0.5s ease;
+                        transition:color 0.5s ease
+                    }
+                }
             }
         }
-    }
-
-    &__logo {
-        color: white;
-        font-size: 14px;
-        float:left;
-    }
-
-    &__menu {
-        width: auto;
-        ul {
-            list-style: none;
-
-            li {
-                display: inline;
-            }
-        }
-        float:left;
-    }
-
-    &__account {
-        color: white;
-        font-size: 12px;
-        float:right
-    };
-
+    }  
 }

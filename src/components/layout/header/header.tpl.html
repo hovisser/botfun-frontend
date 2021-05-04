@@ -1,17 +1,45 @@
 <div class="header">
-    <div class="header__logo">
+    <!--<div class="header__logo">
         Nice logo
     </div>
     <div class="header__menu">
         <ul>
-            <li>menu item 1</li>
-            <li>menu item 2</li>
-            <li>menu item 3</li>
-            <li>menu item 4</li>
-            <li>menu item 5</li>
+            <li>
+               <a href="">menu item 1</a>
+            </li>            
+            <li>
+                <a href="">menu item 2</a>
+             </li>
+             <li>
+                <a href="">menu item 3</a>
+             </li>
+             <li>
+                <a href="">menu item 4</a>
+             </li>
+             <li>
+                <a href="">spread</a>
+             </li>
         </ul>
     </div>
     <div class="header__account">
         Hotze Visser        
-    </div>
+    </div>-->
+   
+    <nav class="navbar">
+        <!-- Nav main -->
+        <div class="navbar-menu">
+            <router-link :to="{ path: '/' }">
+                <img alt="logo" :src="logo" style="width: 50px;height: 50px;" />
+            </router-link>
+            <ul>
+                <li class="nav-item">
+                    <router-link :to="{ path: '/' }">Home</router-link>
+                </li>
+                <li class="nav-item">
+                    <router-link :to="{ path: '/spread' }">spread</router-link>
+                </li>                
+            </ul>
+        </div>
+        <!-- Search (>md) -->
+      </nav>
 </div>
