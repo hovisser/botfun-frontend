@@ -1,6 +1,8 @@
+import Settings from '@/components/pages/settings/settings';
+import Spread from '@/components/pages/spread/spread';
 import Vue from 'vue';
 import VueRouter, { RouteConfig } from 'vue-router';
-import Home from '../components/page';
+import Page from '../components/page';
 
 Vue.use(VueRouter);
 
@@ -8,7 +10,17 @@ const routes: Array<RouteConfig> = [
   {
     path: '/',
     name: 'Home',
-    component: Home,
+    component: Page,
+    children:[{
+      path: '/spread',
+      name: 'Spread',
+      component: Spread,
+    },
+    {
+      path: '/settings',
+      name: 'Settings',
+      component: Settings,
+    },]
   },
   /*
   {

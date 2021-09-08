@@ -1,0 +1,20 @@
+@import "../../../styles/settings";
+@import "../../../styles/_mixins.scss";
+
+.settings {
+    margin-top: 10px;
+    .wrapper {
+        width: 80%;
+        display: block;
+        margin:0px auto;
+      
+        label {
+            width: 120px;
+            float:left;
+        }
+
+      
+    
+    }
+
+}
