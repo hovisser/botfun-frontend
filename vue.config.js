@@ -13,7 +13,9 @@ module.exports = {
             appendTsSuffixTo: [/\.vue$/],
             ignoreDiagnostics: [
               2307,
-            ],
+            ],            
+            happyPackMode: true
+            
           },
         },
         {
