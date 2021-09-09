@@ -4,6 +4,7 @@ import VueRouter, { RouteConfig } from 'vue-router';
 import Home from '@/components/page';
 import Spread from '@/components/pages/account/spread/spread';
 import Info from '@/components/pages/account/info/info';
+import Settings from '@/components/pages/settings/settings';
 
 Vue.use(VueRouter);
 
@@ -22,6 +23,11 @@ const routes: Array<RouteConfig> = [
         path: '/info',
         name: 'Info',
         component: Info,
+      },
+      {
+        path: '/settings',
+        name: 'Settings',
+        component: Settings,
       },
     ]
   },

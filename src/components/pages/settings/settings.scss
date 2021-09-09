@@ -1,0 +1,26 @@
+@import "../../../styles/settings";
+@import "../../../styles/_mixins.scss";
+
+.settings {
+    margin-top: 10px;
+    .wrapper {
+        width: 80%;
+        display: block;
+        margin:0px auto;
+        font-size: 30px !important;
+      
+        label {
+            width: 220px;
+            float:left;
+        }
+
+        input {
+            font-size: 30px !important;
+            width: 100px;
+        }
+
+      
+    
+    }
+
+}

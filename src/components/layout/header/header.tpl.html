@@ -31,6 +31,10 @@
             <router-link :to="{ path: '/' }">
                 <img alt="logo" :src="logo" style="width: 50px;height: 50px;" />
             </router-link>
+            <div class="navbar-account">
+                <span>balance</span>
+                <span>{{ money.toFixed(2) }}</span>
+            </div>
             <ul>
                 <li class="nav-item">
                     <router-link :to="{ path: '/' }">Home</router-link>
@@ -40,8 +44,12 @@
                 </li>   
                 <li class="nav-item">
                     <router-link :to="{ path: '/info' }">info</router-link>
-                </li>                      
+                </li>  
+                <li>                    
+                    <router-link :to="{ path: '/settings' }">settings</router-link>
+                </li>             
             </ul>
+
         </div>
         <!-- Search (>md) -->
       </nav>
