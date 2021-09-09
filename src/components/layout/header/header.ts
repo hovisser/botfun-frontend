@@ -9,19 +9,21 @@ export default class Header extends Vue {
   get logo(): ImageData {  
     return  require('@/assets/images/logo.png');
   }
-
-  public money = 0;
     
-  async mounted() {
-      this.money =  await this.getMoney();
-  }
+  get money() : number{    
+    return this.$store.getters.money;
+  } 
 
-  async getMoney() : Promise<number> {
-      const infoResult = await fetch(`http://localhost:3001/api/v1/account/money`, {
-          credentials: 'include'
-      });
-      
-      return await infoResult.json() as number;
+  expand() {
+    const x = document.getElementById("myTopnav") as HTMLElement;
+    if(x) {
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+    
   }
 
 }

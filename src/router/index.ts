@@ -5,6 +5,7 @@ import Home from '@/components/page';
 import Spread from '@/components/pages/account/spread/spread';
 import Info from '@/components/pages/account/info/info';
 import Settings from '@/components/pages/settings/settings';
+import Connection from '@/components/pages/connection/connection';
 
 Vue.use(VueRouter);
 
@@ -28,6 +29,11 @@ const routes: Array<RouteConfig> = [
         path: '/settings',
         name: 'Settings',
         component: Settings,
+      },
+      {
+        path: '/connection',
+        name: 'Connection',
+        component: Connection,
       },
     ]
   },

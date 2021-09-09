@@ -4,14 +4,14 @@
             <legend>Settings details</legend>
             <div>
                 <label for="user-name">Slots:</label>
-                <input name="user-name" type="number" placeholder="Max slots"  v-model="maxSlots" required autofocus>
+                <input name="user-name" type="number" placeholder="Max slots"  v-model="maxSlots" step="1" required autofocus>
             </div>
             <div>
                 <label for="fixedAmount">Bedrag per slot:</label>
-                <input name="fixedAmount" type="number" placeholder="Fixed amount" v-model="fixedAmount" required>
+                <input name="fixedAmount" type="number" placeholder="Fixed amount" v-model="fixedAmountModel" step="50" required>
             </div>
             <div>
-                <input name="setting-save" type="submit" value="Save" v-on:click='save'>
+                <span> Available: {{ slotsAvailable }}</span>
             </div>
         </fieldset>
     </form>

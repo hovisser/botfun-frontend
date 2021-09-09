@@ -1,0 +1,27 @@
+<div class="connection">
+    <form id="connection-form" class="wrapper">
+        <fieldset>
+            <legend>Bot connection</legend>
+            <div>
+                <label for="bot-host">host url:</label>
+                <input name="bot-host" type="url" placeholder="Bot url" v-model="botHost" required autofocus>
+            </div>
+            <div>
+                <label for="bot-port">Bedrag per slot:</label>
+                <input name="botPort" type="number" placeholder="Fixed amount" v-model="botPort"  required>
+            </div>
+            <div>
+                <span>Host is: {{ botFullUrl}}</span>                
+            </div>
+            <div>
+                <span>
+                    status: {{ errorMsg }}
+                </span>
+                <span class="btn btn-right btn-fa fa-plug" v-on:click='testConnection'>
+                    test
+                </span>
+            </div>
+
+        </fieldset>
+    </form>
+</div>
