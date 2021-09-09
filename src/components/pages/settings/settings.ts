@@ -38,6 +38,10 @@ export default class Settings extends Vue {
         return this.$store.getters.slotsAvailable;
     }
 
+    async restart() {
+        this.$store.dispatch('restart');
+    }
+
 
 
     async save() {

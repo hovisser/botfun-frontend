@@ -28,6 +28,13 @@ const settingsStore: Module<SettingsState, RootState> = {
         }
     },   
     actions: {
+        async restart(store: ActionContext<SettingsState, RootState>) : Promise<void> {
+            const fixedAmountResult: Response = await fetch(`${store.getters.robotHost}/api/v1/bot/restart`, {
+                credentials: 'include'
+            });
+                     
+            store.state.fixedAmount = await fixedAmountResult.json();
+        },
         async getSlots(store: ActionContext<SettingsState, RootState>) : Promise<void> {
             const slotResult: Response = await fetch(`${store.getters.robotHost}/api/v1/settings/get/maxSlots`, {
                 credentials: 'include'
