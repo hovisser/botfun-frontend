@@ -7,10 +7,16 @@
         width: 80%;
         display: block;
         margin:0px auto;
+        font-size: 30px !important;
       
         label {
-            width: 120px;
+            width: 220px;
             float:left;
+        }
+
+        input {
+            font-size: 30px !important;
+            width: 100px;
         }
 
       
