@@ -14,4 +14,15 @@ import './page.scss';
   },
 })
 export default class Page extends Vue {
+  mounted() : void {
+    try {
+      this.$store.dispatch('getSpread');
+      this.$store.dispatch('getMoney');
+      this.$store.dispatch('getBalance');
+    } catch (ex) {
+      console.error(ex);
+      throw ex;
+    }        
+  }
 }
+

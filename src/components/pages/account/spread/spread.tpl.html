@@ -1,0 +1,12 @@
+<div class="spread">
+    <h2>Spread</h2>
+    <ul>
+        <li v-for="spread in spreads">
+            <div>
+                <img :src="image(spread.pair)" :alt="spread.pair" />
+                <span >pair: {{ spread.pair }}</span>
+                <span>perc: {{ spread.perc }}</span>
+            </div>
+        </li>
+    </ul>
+</div>
