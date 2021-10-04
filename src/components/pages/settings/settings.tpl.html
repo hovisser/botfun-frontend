@@ -2,13 +2,21 @@
     <form id="settings-form" class="wrapper">
         <fieldset>
             <legend>Settings details</legend>
-            <div>
+            <!--<div>
                 <label for="user-name">Slots:</label>
                 <input name="user-name" type="number" placeholder="Max slots"  v-model="maxSlots" step="1" required autofocus>
             </div>
             <div>
                 <label for="fixedAmount">Bedrag per slot:</label>
                 <input name="fixedAmount" type="number" placeholder="Fixed amount" v-model="fixedAmountModel" step="50" required>
+            </div>-->
+
+       
+            
+            <div v-for="(value, key) of items">
+                <label for="key"  v-if='value'>{{ prettyPrint(key) }}:</label>
+                <input name="items[key]" type="getType(value)" v-if='value' v-model="items[key]" @change="changing(value, key)">      
+                
             </div>
             <div>
                 <span> Available: {{ slotsAvailable }}</span>
@@ -18,6 +26,7 @@
                     Restart
                 </span>
             </div>
+
         </fieldset>
     </form>
 </div>

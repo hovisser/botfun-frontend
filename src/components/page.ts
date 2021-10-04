@@ -17,8 +17,8 @@ export default class Page extends Vue {
     try {
       this.$store.dispatch('getSpread');
       this.$store.dispatch('getMoney');
-      this.$store.dispatch('getFixedAmount');
-      this.$store.dispatch('getSlots');
+     // this.$store.dispatch('getFixedAmount');
+     // this.$store.dispatch('getSlots');
     } catch (ex) {
       console.error(ex);
       throw ex;
